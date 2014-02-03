@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Silence</title>
+
+  <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/gh-fork-ribbon.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="github-fork-ribbon-wrapper right">
+  <div class="github-fork-ribbon">
+    <a href="https://github.com/somlor/silence-backbone">Fork me on GitHub</a>
+  </div>
+</div>
+
+<div id="content"></div>
+
+<script type="text/template" data-template="index">
+  <div class="timer" data-timer></div>
+</script>
+
+<script type="text/template" data-template="timer">
+  <div class="minutes">
+    <input class="knob minute"
+           disabled="disabled"
+           data-displayPrevious=false
+           data-width="400"
+           data-height="400"
+           data-thickness=".15" />
+
+    <div class="timer-start"></div>
+  </div>
+
+  <div class="seconds">
+    <input class="knob second"
+           data-displayInput=false
+           data-width="300"
+           data-height="300"
+           data-thickness=".075" />
+  </div>
+</script>
+
+<script src="js/libs/jquery-1.11.0.js" type="text/javascript"></script>
+<script src="js/libs/jquery.knob-1.2.0.js" type="text/javascript"></script>
+<script src="js/libs/underscore-1.5.2.js" type="text/javascript"></script>
+<script src="js/libs/backbone-1.1.0.js" type="text/javascript"></script>
+
+<script src="js/app.js" type="text/javascript"></script>
+<script src="js/routers/main_router.js" type="text/javascript"></script>
+<script src="js/views/index.js" type="text/javascript"></script>
+<script src="js/views/timer.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(function () {
+  Silence.initialize();
+});
+</script>
+
+</body>
+</html>

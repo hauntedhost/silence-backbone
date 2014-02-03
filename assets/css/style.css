@@ -1,0 +1,148 @@
+#content {
+  width: 460px;
+  margin: 0 auto;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-rendering: optimizelegibility;
+  color: white;
+  background: #101215;
+}
+
+p {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.rounded-cornered,
+.rounded-cornered .handle {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.rounded-corners, .slider, .handle, button {
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+
+.timer {
+  position: relative;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.timer .minutes {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.timer .seconds {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+.timer > p {
+  font-size: 20px;
+}
+
+.timer canvas {
+  opacity: 1;
+}
+
+input.knob {
+  opacity: 1;
+  position: absolute;
+  font-size: 96px !important;
+}
+
+input.knob.hover {
+  /* */
+}
+
+.timer-start {
+  text-align: center;
+  line-height: 144px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 3px #2C313A, inset 0px 2px 3px #1D2026;
+}
+
+.timer-start {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  z-index: 1000;
+}
+
+.timer-start.hover {
+  cursor: pointer;
+  background-color: rgba(53, 65, 89, 0.25);
+  box-shadow: 0px 2px 3px #363C47, inset 0px 2px 3px #17191E;
+}
+
+.slider {
+  position: relative;
+  width: 364px;
+  margin: 25px auto;
+  height: 14px;
+  background: #15181d;
+  border: 1px solid rgba(164, 185, 216, 0.05);
+}
+
+.handle {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 80px;
+  height: 18px;
+  background-color: #1a49b2;
+  background-image: -moz-linear-gradient(#1a49b2, #1642a3);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a49b2), to(#1642a3));
+  background-image: -webkit-linear-gradient(#1a49b2, #1642a3);
+  background-image: -o-linear-gradient(#1a49b2, #1642a3);
+  border: 2px solid rgba(34, 103, 255, 0.75);
+}
+
+.handle:hover {
+  cursor: pointer;
+}
+
+.handle.ui-draggable-dragging {
+  background: #1a49b2;
+  border: 2px solid #5ea5ff;
+}
+
+h2 {
+  color: #afafaf;
+  text-align: center;
+  font-size: 36px;
+}
+
+button {
+  font-size: 24px;
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px 12px 24px;
+  border: 1px solid  #1c4aa7;
+  color: #ebf1f5;
+  background: #15386a;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1667c4;
+}
+
+button:active {
+  background: #104cb7;
+}
